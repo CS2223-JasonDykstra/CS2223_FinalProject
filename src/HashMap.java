@@ -25,7 +25,8 @@ public class HashMap <K,V> {
                     return true;
                 }
             }
-            nodes.add(in);
+            //add at front of array list
+            nodes.add(0, in);
             return false;
         }
         boolean remove(K key){
